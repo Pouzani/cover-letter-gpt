@@ -1,8 +1,7 @@
 import type { RequestHandler } from './$types';
 import { OPENAI_KEY, COVER_LETTER_PROMPT } from '$env/static/private';
 import OpenAI from "openai";
-import { OpenAIStream, StreamingTextResponse, type Message} from 'ai'
-import type { ChatCompletionMessage } from 'openai/resources';
+import { OpenAIStream, StreamingTextResponse} from 'ai'
 
 const openai = new OpenAI({
     apiKey: OPENAI_KEY
